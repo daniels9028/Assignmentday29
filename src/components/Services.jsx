@@ -20,6 +20,9 @@ const Services = (props) => {
             <CardServices service={service} key={service.id} />
           ))}
         </div>
+        <button className="mt-8 rounded-full bg-white text-[#458FF6] border border-[#458FF6] px-6 py-2 text-sm hover:bg-[#458FF6] hover:text-white transition-all duration-500">
+          Learn more
+        </button>
       </div>
     </section>
   );
