@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import Services from "./components/Services";
 import Apps from "./components/Apps";
+import Testimonials from "./components/Testimonials";
 
 import banner from "./assets/banner.png";
 
@@ -15,6 +16,12 @@ import services6 from "./assets/services6.png";
 
 import apps1 from "./assets/apps1.png";
 import apps2 from "./assets/apps2.png";
+
+import testimonial1 from "./assets/testimonial1.png";
+import testimonial2 from "./assets/testimonial2.png";
+import testimonial3 from "./assets/testimonial3.webp";
+import testimonial4 from "./assets/testimonial4.webp";
+import testimonial5 from "./assets/testimonial5.png";
 
 const services = [
   {
@@ -77,6 +84,49 @@ const apps = [
   },
 ];
 
+const testimonials = [
+  {
+    id: 1,
+    name: "Edward Newgate",
+    position: "Founder Circle",
+    testi:
+      "“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”",
+    image: testimonial1,
+  },
+  {
+    id: 2,
+    name: "Jack Grealish",
+    position: "Founder Facebook",
+    testi:
+      "“Petal is an invaluable tool for individual researchers or teams sharing references with each other. Our group of 10, comprised of students and faculty members, uses it daily. The browser plugin and the automatic population of document properties with metadata makes adding references easy. The search capabilities and the recent AI additions are fantastic. Petal has truly simplified our workflow and enhanced our productivity.”",
+    image: testimonial2,
+  },
+  {
+    id: 3,
+    name: "Michael Arteta",
+    position: "Founder Twitter",
+    testi:
+      "“Superpark and Valo Motion have been working closely for many years. Both of our companies have a great dedication to testing and to product quality - as a result we installed over 50 systems in parks across the globe.”",
+    image: testimonial3,
+  },
+  {
+    id: 4,
+    name: "Josh Steph",
+    position: "Duke of USA",
+    testi:
+      "“The system has been really easy to operate and is one of our most popular attractions. We have already ordered more systems.”",
+    image: testimonial4,
+  },
+  {
+    id: 5,
+    name: "Luke Tahn",
+    position: "CEO of Blibli",
+    testi:
+      "“Nowhere in the industry have I experienced the kind of support Valo Motion offers. No matter what the issue is, we get help immediately.”",
+    image: testimonial5,
+  },
+];
+
 const App = () => {
   return (
     <>
@@ -84,6 +134,7 @@ const App = () => {
       <Banner banner={banner} />
       <Services services={services} />
       <Apps apps={apps} />
+      <Testimonials testimonials={testimonials} />
     </>
   );
 };
