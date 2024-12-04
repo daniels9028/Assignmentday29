@@ -14,12 +14,22 @@ const Navbar = () => {
           </h1>
           <span className="text-lg font-semibold text-black">Trafalgar</span>
         </div>
-        <ul className="items-center justify-center hidden gap-6 lg:flex">
-          <li>Home</li>
-          <li>Find a Doctor</li>
-          <li>Apps</li>
-          <li>Testimonials</li>
-          <li>About Us</li>
+        <ul className="items-center justify-center hidden gap-8 lg:flex cursor-pointer">
+          <li className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]">
+            Home
+          </li>
+          <li className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]">
+            Find a Doctor
+          </li>
+          <li className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]">
+            Apps
+          </li>
+          <li className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]">
+            Testimonials
+          </li>
+          <li className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]">
+            About Us
+          </li>
         </ul>
         <div
           className="flex text-3xl cursor-pointer lg:hidden"
