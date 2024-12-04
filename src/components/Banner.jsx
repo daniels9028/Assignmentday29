@@ -10,7 +10,7 @@ const Banner = ({ banner }) => {
             Trafalgar provides progressive, and affordable healthcare,
             accessible on mobile and online for everyone
           </p>
-          <button className="bg-[#458FF6] text-white py-3 px-6 rounded-full font-medium">
+          <button className="bg-[#458FF6] text-white py-3 px-6 rounded-full font-medium hover:bg-white hover:text-[#458FF6] transition-all duration-500 border hover:border-[#458FF6]">
             Consult Today
           </button>
         </div>
