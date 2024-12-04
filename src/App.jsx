@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import Services from "./components/Services";
 import Apps from "./components/Apps";
 import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
 import banner from "./assets/banner.png";
 
@@ -127,6 +128,24 @@ const testimonials = [
   },
 ];
 
+const footerLinks = [
+  {
+    id: 1,
+    title: "Company",
+    links: ["About", "Testimonials", "Find a doctor", "Apps"],
+  },
+  {
+    id: 2,
+    title: "Region",
+    links: ["Indonesia", "Singapore", "Hongkong", "Canada"],
+  },
+  {
+    id: 3,
+    title: "Help",
+    links: ["Help center", "Contact support", "Instructions", "How it works"],
+  },
+];
+
 const App = () => {
   return (
     <>
@@ -135,6 +154,7 @@ const App = () => {
       <Services services={services} />
       <Apps apps={apps} />
       <Testimonials testimonials={testimonials} />
+      <Footer footerLinks={footerLinks} />
     </>
   );
 };
