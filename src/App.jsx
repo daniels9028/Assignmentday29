@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import Services from "./components/Services";
+import Apps from "./components/Apps";
 
 import banner from "./assets/banner.png";
 
@@ -11,6 +12,9 @@ import services3 from "./assets/services3.png";
 import services4 from "./assets/services4.png";
 import services5 from "./assets/services5.png";
 import services6 from "./assets/services6.png";
+
+import apps1 from "./assets/apps1.png";
+import apps2 from "./assets/apps2.png";
 
 const services = [
   {
@@ -56,12 +60,30 @@ const services = [
   },
 ];
 
+const apps = [
+  {
+    id: 1,
+    title: "Leading healthcare providers",
+    description:
+      "Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver",
+    image: apps1,
+  },
+  {
+    id: 2,
+    title: "Download our mobile apps",
+    description:
+      "Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely",
+    image: apps2,
+  },
+];
+
 const App = () => {
   return (
     <>
       <Navbar />
       <Banner banner={banner} />
       <Services services={services} />
+      <Apps apps={apps} />
     </>
   );
 };
