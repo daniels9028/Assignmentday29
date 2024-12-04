@@ -6,7 +6,7 @@ const CardApps = (props) => {
   return (
     <div
       className={`flex justify-center items-center gap-12 ${
-        id % 2 === 0 ? "lg:flex-row-reverse" : "lg:flex-row"
+        id % 2 === 0 ? "xl:flex-row-reverse" : "xl:flex-row"
       } flex-col`}
     >
       <img src={image} alt="" />
