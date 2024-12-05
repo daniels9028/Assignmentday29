@@ -5,6 +5,7 @@ import Services from "./components/Services";
 import Apps from "./components/Apps";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
+import Article from "./components/Article";
 
 import banner from "./assets/banner.png";
 
@@ -23,6 +24,10 @@ import testimonial2 from "./assets/testimonial2.png";
 import testimonial3 from "./assets/testimonial3.webp";
 import testimonial4 from "./assets/testimonial4.webp";
 import testimonial5 from "./assets/testimonial5.png";
+
+import article1 from "./assets/article1.png";
+import article2 from "./assets/article2.png";
+import article3 from "./assets/article3.png";
 
 const services = [
   {
@@ -146,6 +151,51 @@ const footerLinks = [
   },
 ];
 
+const articles = [
+  {
+    id: 1,
+    title: "Disease detection, check up in the laboratory",
+    description:
+      "In this case, the role of the health laboratory is very important to do a disease detection...",
+    image: article1,
+  },
+  {
+    id: 2,
+    title: "Herbal medicines that are safe for consumption",
+    description:
+      "Herbal medicine is very widely used at this time because of its very good for your health...",
+    image: article2,
+  },
+  {
+    id: 3,
+    title: "Natural care for healthy facial skin",
+    description:
+      "A healthy lifestyle should start from now and also for your skin health. There are some...",
+    image: article3,
+  },
+  {
+    id: 4,
+    title: "Disease detection, check up in the laboratory",
+    description:
+      "In this case, the role of the health laboratory is very important to do a disease detection...",
+    image: article1,
+  },
+  {
+    id: 5,
+    title: "Herbal medicines that are safe for consumption",
+    description:
+      "Herbal medicine is very widely used at this time because of its very good for your health...",
+    image: article2,
+  },
+  {
+    id: 6,
+    title: "Natural care for healthy facial skin",
+    description:
+      "A healthy lifestyle should start from now and also for your skin health. There are some...",
+    image: article3,
+  },
+];
+
 const App = () => {
   return (
     <>
@@ -154,6 +204,7 @@ const App = () => {
       <Services services={services} />
       <Apps apps={apps} />
       <Testimonials testimonials={testimonials} />
+      <Article articles={articles} />
       <Footer footerLinks={footerLinks} />
     </>
   );
