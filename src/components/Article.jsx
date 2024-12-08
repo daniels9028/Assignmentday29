@@ -5,12 +5,15 @@ const Article = (props) => {
   const { articles } = props;
 
   return (
-    <section className="my-20 max-w-[1444px] mx-auto lg:px-20 px-10">
-      <div className="flex flex-col justify-center items-center">
+    <section
+      className="my-20 max-w-[1444px] mx-auto lg:px-20 px-10"
+      id="articles"
+    >
+      <div className="flex flex-col items-center justify-center">
         <h3 className="text-3xl font-semibold tracking-wide text-center">
           Check out our latest article
         </h3>
-        <div className="grid lg:grid-cols-3 grid-cols-1 place-items-center gap-8 mt-8">
+        <div className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-3 place-items-center">
           {articles.map((article) => (
             <ArticleCard
               key={article.id}

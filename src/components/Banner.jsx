@@ -2,9 +2,9 @@ import React from "react";
 
 const Banner = ({ banner }) => {
   return (
-    <section className="my-24 max-w-[1444px] mx-auto lg:px-20 px-10">
-      <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-8 gap-16 place-items-center">
-        <div className="space-y-6 lg:order-first order-last">
+    <section className="my-24 max-w-[1444px] mx-auto lg:px-20 px-10" id="home">
+      <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-8 place-items-center">
+        <div className="order-last space-y-6 lg:order-first">
           <h3 className="text-4xl font-semibold">Virtual Healthcare For You</h3>
           <p className="text-[#7D7987]">
             Trafalgar provides progressive, and affordable healthcare,
@@ -16,7 +16,7 @@ const Banner = ({ banner }) => {
         </div>
         <img
           src={banner}
-          className="object-cover lg:order-last order-first"
+          className="order-first object-cover lg:order-last"
           alt="banner"
         />
       </div>
