@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -14,22 +15,57 @@ const Navbar = () => {
           </h1>
           <span className="text-lg font-semibold text-black">Trafalgar</span>
         </div>
-        <ul className="items-center justify-center hidden gap-8 lg:flex cursor-pointer">
-          <li className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]">
+        <ul className="items-center justify-center hidden gap-8 cursor-pointer lg:flex">
+          <Link
+            to="home"
+            className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]"
+            smooth
+            duration={500}
+            activeClass="text-blue-500"
+            spy
+          >
             Home
-          </li>
-          <li className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]">
-            Find a Doctor
-          </li>
-          <li className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]">
+          </Link>
+          <Link
+            to="services"
+            className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]"
+            smooth
+            duration={500}
+            activeClass="text-blue-500"
+            spy
+          >
+            Services
+          </Link>
+          <Link
+            to="apps"
+            className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]"
+            smooth
+            duration={500}
+            activeClass="text-blue-500"
+            spy
+          >
             Apps
-          </li>
-          <li className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]">
+          </Link>
+          <Link
+            to="testimonials"
+            className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]"
+            smooth
+            duration={500}
+            activeClass="text-blue-500"
+            spy
+          >
             Testimonials
-          </li>
-          <li className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]">
-            About Us
-          </li>
+          </Link>
+          <Link
+            to="articles"
+            className="hover:text-black font-semibold text-md transition-all duration-300 text-[#7D7987]"
+            smooth
+            duration={500}
+            activeClass="text-blue-500"
+            spy
+          >
+            Article
+          </Link>
         </ul>
         <div
           className="flex text-3xl cursor-pointer lg:hidden"
